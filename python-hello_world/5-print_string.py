@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print("hello")
+str = "Holberton School"
+print(f"{str}{str}{str}{str}")
+print(f"{str[0:9]}")
