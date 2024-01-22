@@ -5,3 +5,5 @@ chmod +x $1
 git add $1
 # Update the file permissions in git
 git update-index --chmod=+x $1
+git commit -m "$2"
+git push
