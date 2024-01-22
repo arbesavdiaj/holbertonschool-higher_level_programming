@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for i in range(97, 100):
-    print("{}".format(chr(i)), end="")
+for a in range(97, 123):
+    print("{}".format(chr(a)).replace("q", "e"), end="")
