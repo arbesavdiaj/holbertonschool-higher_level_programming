@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for a in range(97, 123):
-    print("{}".format(chr(a)).replace("q", "e"), end="")
+print("".join([chr(i) for i in range(97, 123) if i not in [101, 113]]))
