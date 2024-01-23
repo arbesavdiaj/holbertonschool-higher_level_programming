@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-	import sys
+    import sys
 argument_count = len(sys.argv)-1
 if argument_count == 0:
     print("{} arguments.".format(argument_count))
