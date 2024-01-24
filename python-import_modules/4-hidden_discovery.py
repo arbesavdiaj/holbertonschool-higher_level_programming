@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-import hidden_4 as secret_file
+from hidden_4 import *
 
-name = dir(secret_file)
-
-for n in name():
+for n in hidden_4():
     if n[0] != "__":
         print(n)
