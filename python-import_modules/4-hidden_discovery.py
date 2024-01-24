@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from hidden_4 import *
+if __name__ == "__main__":
+    from hidden_4 import *
 
-for n in hidden_4:
-    if n[0] != "__":
-        print(n)
+    for n in hidden_4:
+        if n[0] != "__":
+            print(n)
