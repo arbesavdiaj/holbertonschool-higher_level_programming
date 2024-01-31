@@ -8,9 +8,9 @@ class Square:
     '''
     not passing any arguments
     '''
-    def __init__(self, size):
+    def __init__(self, size=0):
         self.__size = size
-        if self.__size is int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if self.__size < 0:
             raise ValueError("size must be >= 0")
