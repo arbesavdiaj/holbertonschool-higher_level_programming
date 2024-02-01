@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-python
+python add integer division by zero
 '''
 
 
