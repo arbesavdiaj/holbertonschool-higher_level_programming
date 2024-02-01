@@ -1,8 +1,18 @@
 def add_integers(a, b=98):
     """
-    Returns the addition of two numbers.
+    Returns the addition of two numbers that are integers.
     
     >>> add(2, 3)
     5
-    """
+
     return a + b
+    """
+
+    """
+    Returns the addition of two numbers that are floats
+
+    >>> add(2.11, 3.14)
+    5.25
+
+    return a + b
+    """
