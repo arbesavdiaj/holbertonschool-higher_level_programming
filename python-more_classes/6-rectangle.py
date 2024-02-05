@@ -4,6 +4,7 @@ create a class rectangle
 '''
 
 
+
 class Rectangle:
     number_of_instances = 0
     '''
