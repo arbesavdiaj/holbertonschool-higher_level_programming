@@ -7,7 +7,7 @@ create a class rectangle
 class Rectangle:
     number_of_instances = 0
     '''
-    class Rectangle
+    class Rectangle, add instance to class
     '''
     def __init__(self, width=0, height=0):
         self.height = height
