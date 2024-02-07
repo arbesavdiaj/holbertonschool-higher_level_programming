@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-comment
-'''
+'''Defines a class MyList that inherits from list'''
 
 
 class MyList(list):
