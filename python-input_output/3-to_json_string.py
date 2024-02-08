@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-import json
 '''json file'''
+
+
+import json
 
 
 def to_json_string(my_obj):
