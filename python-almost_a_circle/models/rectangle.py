@@ -48,7 +48,6 @@ class Rectangle(Base):
             raise ValueError(f"width must be >= 0")
         self.__x = value
 
-
     @property
     def y(self):
         return self.__y
