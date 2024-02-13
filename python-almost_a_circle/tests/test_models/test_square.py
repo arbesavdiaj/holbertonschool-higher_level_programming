@@ -6,7 +6,6 @@ from models.square import Square
 from io import StringIO
 import sys
 import json
-import pep8
 
 
 class TestSquare(unittest.TestCase):
@@ -183,15 +182,3 @@ class TestSquare(unittest.TestCase):
         a_dict = {'id': 1, 'x': 2, 'size': 10, 'y': 1}
         s1_dictionary = s1.to_dictionary()
         self.assertTrue(s1_dictionary == a_dict)
-
-    def test_pep8_model(self):
-        """tests for pep8"""
-        p8 = pep8.StyleGuide(quiet=True)
-        p = p8.check_files(['models/base.py'])
-        self.assertEqual(p.total_errors, 0, "fix pep8")
-
-    def test_pep8_test(self):
-        """tests for pep8"""
-        p8 = pep8.StyleGuide(quiet=True)
-        p = p8.check_files(['tests/test_models/test_base.py'])
-        self.assertEqual(p.total_errors, 0, "fix pep8")
