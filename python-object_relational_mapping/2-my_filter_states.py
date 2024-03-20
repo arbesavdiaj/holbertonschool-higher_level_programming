@@ -7,6 +7,7 @@ import MySQLdb
 import sys
 
 if __name__ == '__main__':
+    """displays all values in the table where name matches the argument"""
     db = MySQLdb.connect(
         host='localhost',
         user=sys.argv[1],
