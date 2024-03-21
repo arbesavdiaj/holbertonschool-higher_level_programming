@@ -18,14 +18,14 @@ if __name__ == '__main__':
             port=3306
             )
     cur = db.cursor()
-    que = "SELECT cities.name FROM cities\
+    cur.execute = ("SELECT cities.name FROM cities\
                     JOIN states ON states.id=cities.state_id\
-                    WHERE states.name LIKE BINARY %s\
-                    ORDER BY cities.id ASC"
-    cur.execute(que, (sys.argv[4], ))
+                    WHERE states.name = %s\
+                    ORDER BY cities.id", (sys.argv[4]))
     rows = cur.fetchall()
 
-    print(", ".join([row[0] for row in rows]))
+    for row in rows:
+        print(row)
 
     cur.close()
     db.close()
